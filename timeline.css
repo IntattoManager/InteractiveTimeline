@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#timeline {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+}
+
+.time-axis {
+    position: absolute
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000;
+}
+
+.block {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #f1c40f;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.block-label {
+    pointer-events: none;
+}
+
+#options {
+    margin-top: 20px;
+}
